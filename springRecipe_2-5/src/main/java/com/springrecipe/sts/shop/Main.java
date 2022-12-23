@@ -18,9 +18,11 @@ public class Main {
 		cart1.addItem(aaa);
 		cart1.addItem(cdrw);
 		
+		System.out.print("Shopping cart 1 contains ");
 		cart1.getItems().forEach(item -> {
-				System.out.println("Shopping cart 1 contains "+item.getName() +" "+ item.getPrice());
+				System.out.print(item.getName() +" "+ item.getPrice()+" ");
 		});
+		System.out.println();
 
 		ShoppingCart cart2 = context.getBean("shoppingCart",ShoppingCart.class);
 		cart2.addItem(dvdrw);
